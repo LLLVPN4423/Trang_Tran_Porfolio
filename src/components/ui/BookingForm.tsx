@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { Phone, MapPin } from 'lucide-react'
 import { content } from '../../data/content'
+import { pricing } from '../../data/pricing'
 import { useLanguage } from '../../context/LanguageContext'
 import { SocialLinks } from './SocialLinks'
 
@@ -43,9 +44,9 @@ export function BookingForm() {
           <option value="" disabled className="bg-zinc-900">
             {locale === 'en' ? 'Select a service' : 'Chọn dịch vụ'}
           </option>
-          {content.services.items.map((service) => (
-            <option key={service.id} value={t(service.name)} className="bg-zinc-900">
-              {t(service.name)}
+          {pricing.bookingOptions.map((service) => (
+            <option key={service.id} value={t(service.label)} className="bg-zinc-900">
+              {t(service.label)}
             </option>
           ))}
         </select>

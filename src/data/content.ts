@@ -222,56 +222,10 @@ export const content: SiteContent = {
     sectionLabel: { en: 'Expertise', vi: 'Dịch vụ' },
     heading: { en: 'Services & pricing', vi: 'Dịch vụ & bảng giá' },
     description: {
-      en: 'Every service begins with a personalized consultation.',
-      vi: 'Mọi dịch vụ đều bắt đầu bằng buổi tư vấn cá nhân hóa.',
+      en: 'Official Trang Tran Hair price list — transparent reference pricing by service, hair size, and duration.',
+      vi: 'Bảng giá chính thức Trang Tran Hair — tham khảo rõ ràng theo dịch vụ, size tóc và thời gian thực hiện.',
     },
-    items: [
-      {
-        id: 'cut',
-        name: { en: 'Precision Cut & Styling', vi: 'Cắt tạo kiểu' },
-        description: {
-          en: 'Tailored cuts that complement your face, lifestyle, and personality.',
-          vi: 'Kiểu cắt phù hợp khuôn mặt, phong cách sống và tính cách của bạn.',
-        },
-        priceFrom: '80,000₫',
-      },
-      {
-        id: 'color',
-        name: { en: 'Fashion Color / Balayage', vi: 'Nhuộm màu thời trang' },
-        description: {
-          en: 'Editorial color work with premium Olaplex protection.',
-          vi: 'Nhuộm editorial với bảo vệ Olaplex cao cấp.',
-        },
-        priceFrom: '450,000₫',
-      },
-      {
-        id: 'texture',
-        name: { en: 'Perm / Straightening', vi: 'Uốn / Ép / Duỗi' },
-        description: {
-          en: 'Texture transformations with long-lasting, healthy results.',
-          vi: 'Biến đổi kết cấu tóc bền đẹp, khỏe mạnh.',
-        },
-        priceFrom: '400,000₫',
-      },
-      {
-        id: 'treatment',
-        name: { en: 'Deep Care & Recovery', vi: 'Hấp dưỡng / Phục hồi' },
-        description: {
-          en: 'Intensive treatments with Mydentity and Epres products.',
-          vi: 'Phục hồi chuyên sâu với sản phẩm Mydentity và Epres.',
-        },
-        priceFrom: '500,000₫',
-      },
-      {
-        id: 'consult',
-        name: { en: 'Personalized Consultation', vi: 'Tư vấn cá nhân hóa' },
-        description: {
-          en: 'Complimentary style advisory before every transformation.',
-          vi: 'Tư vấn phong cách miễn phí trước mỗi lần thay đổi.',
-        },
-        priceFrom: 'Free',
-      },
-    ],
+    items: [],
   },
   contact: {
     sectionLabel: { en: 'Book', vi: 'Đặt lịch' },
