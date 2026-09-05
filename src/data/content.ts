@@ -151,7 +151,6 @@ export const content: SiteContent = {
     { id: 'about', label: { en: 'About', vi: 'Giới thiệu' } },
     { id: 'tour', label: { en: 'Tour', vi: 'Khám phá' } },
     { id: 'work', label: { en: 'Work', vi: 'Tác phẩm' } },
-    { id: 'services', label: { en: 'Services', vi: 'Dịch vụ' } },
     { id: 'contact', label: { en: 'Book', vi: 'Đặt lịch' } },
   ],
   hero: {
@@ -217,15 +216,6 @@ export const content: SiteContent = {
       vi: 'Từ màu nhuộm runway đến kiểu cắt tinh tế — mỗi tác phẩm kể một câu chuyện. Các slot trống bên dưới sẵn sàng cho ảnh portfolio của bạn.',
     },
     items: buildLookbookSlots(),
-  },
-  services: {
-    sectionLabel: { en: 'Expertise', vi: 'Dịch vụ' },
-    heading: { en: 'Services & pricing', vi: 'Dịch vụ & bảng giá' },
-    description: {
-      en: 'Official Trang Tran Hair price list — transparent reference pricing by service, hair size, and duration.',
-      vi: 'Bảng giá chính thức Trang Tran Hair — tham khảo rõ ràng theo dịch vụ, size tóc và thời gian thực hiện.',
-    },
-    items: [],
   },
   contact: {
     sectionLabel: { en: 'Book', vi: 'Đặt lịch' },

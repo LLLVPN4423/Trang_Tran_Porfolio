@@ -8,7 +8,7 @@ export function Contact() {
   const { t } = useLanguage()
 
   return (
-    <SectionWrapper id="contact" number="05" label={content.contact.sectionLabel}>
+    <SectionWrapper id="contact" number="04" label={content.contact.sectionLabel}>
       <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">
         <div>
           <ScrollReveal>

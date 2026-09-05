@@ -42,13 +42,6 @@ export interface GalleryItem {
   category: BilingualText
 }
 
-export interface ServiceItem {
-  id: string
-  name: BilingualText
-  description: BilingualText
-  priceFrom: string
-}
-
 export interface StatItem {
   value: string
   label: BilingualText
@@ -88,12 +81,6 @@ export interface SiteContent {
     heading: BilingualText
     description: BilingualText
     items: GalleryItem[]
-  }
-  services: {
-    sectionLabel: BilingualText
-    heading: BilingualText
-    description: BilingualText
-    items: ServiceItem[]
   }
   contact: {
     sectionLabel: BilingualText

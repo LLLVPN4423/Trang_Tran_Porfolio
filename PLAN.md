@@ -1,5 +1,7 @@
 # PLAN — TIGERTRAN.studio Portfolio
 
+> **Note:** Services section has been removed and replaced with direct booking link to trangtran-hair.pages.dev
+
 ## Architecture v2 — Dark Editorial + Cinematic Scroll
 
 > **Status:** Awaiting approval before implementation.  
@@ -118,10 +120,10 @@ Inter: 300, 400, 500
 ## 2. Page Flow (unchanged)
 
 ```
-Hero → About (01) → Salon Tour (02) → Lookbook (03) → Services (04) → Contact (05)
+Hero → About (01) → Salon Tour (02) → Lookbook (03) → Contact (04)
 ```
 
-Nav anchors: **About · Tour · Work · Services · Book**
+Nav anchors: **About · Tour · Work · Book**
 
 ---
 

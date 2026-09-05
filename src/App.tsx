@@ -4,7 +4,6 @@ import { Hero } from './components/sections/Hero'
 import { About } from './components/sections/About'
 import { SalonTour } from './components/sections/SalonTour'
 import { Lookbook } from './components/sections/Lookbook'
-import { Services } from './components/sections/Services'
 import { Contact } from './components/sections/Contact'
 import { LanguageProvider } from './context/LanguageContext'
 import { SmoothScrollProvider } from './components/layout/SmoothScrollProvider'
@@ -21,7 +20,6 @@ function AppContent() {
         <About />
         <SalonTour />
         <Lookbook />
-        <Services />
         <Contact />
       </main>
       <Footer />
