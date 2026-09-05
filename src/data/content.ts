@@ -24,6 +24,101 @@ function buildLookbookSlots(): GalleryItem[] {
   return slots
 }
 
+// Add video items from Drive
+const videoItems: GalleryItem[] = [
+  {
+    id: 'V01',
+    image: null,
+    title: { en: 'Hair Transformation 01', vi: 'Biến Hóa Tóc 01' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/17G9EhK14LjfjYn_dQgp2BvdHXE9s67hc/view?usp=drive_link',
+  },
+  {
+    id: 'V02',
+    image: null,
+    title: { en: 'Hair Transformation 02', vi: 'Biến Hóa Tóc 02' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/1DRhYoJ12abv8bqqASOaUbzGiwadzz_Zs/view?usp=drive_link',
+  },
+  {
+    id: 'V03',
+    image: null,
+    title: { en: 'Hair Transformation 03', vi: 'Biến Hóa Tóc 03' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/1QwC5Hj54vwyzpedvFk9uuUmZNaetSHcA/view?usp=drive_link',
+  },
+  {
+    id: 'V04',
+    image: null,
+    title: { en: 'Hair Transformation 04', vi: 'Biến Hóa Tóc 04' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/1z2TlrOfRKGtxaa_tw-UOwkyCYbfNJHA6/view?usp=drive_link',
+  },
+  {
+    id: 'V05',
+    image: null,
+    title: { en: 'Hair Transformation 05', vi: 'Biến Hóa Tóc 05' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/1FALq8Uq36LwRKrwZU8oxccrezYhqCdnp/view?usp=drive_link',
+  },
+  {
+    id: 'V06',
+    image: null,
+    title: { en: 'Hair Transformation 06', vi: 'Biến Hóa Tóc 06' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/151qCFuAb-hyN5WxWgwluWfyYE-xV4Jib/view?usp=drive_link',
+  },
+  {
+    id: 'V07',
+    image: null,
+    title: { en: 'Hair Transformation 07', vi: 'Biến Hóa Tóc 07' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/1ejmDyWZqGfhchW7duId7v8_yu_9QTQ18/view?usp=drive_link',
+  },
+  {
+    id: 'V08',
+    image: null,
+    title: { en: 'Hair Transformation 08', vi: 'Biến Hóa Tóc 08' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/14WVSS-bTMtCFTV5SXNkWzbEau44dRlsC/view?usp=drive_link',
+  },
+  {
+    id: 'V09',
+    image: null,
+    title: { en: 'Hair Transformation 09', vi: 'Biến Hóa Tóc 09' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/188DLrd-ICP3aga_iC7Lh9IuKA-_FHqzn/view?usp=drive_link',
+  },
+  {
+    id: 'V10',
+    image: null,
+    title: { en: 'Hair Transformation 10', vi: 'Biến Hóa Tóc 10' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/1yYeo46whVDwM0fgYC1FatGP9TBK2BBLs/view?usp=drive_link',
+  },
+  {
+    id: 'V11',
+    image: null,
+    title: { en: 'Hair Transformation 11', vi: 'Biến Hóa Tóc 11' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/1TiWVCIbcogJ-7oGIkRyBgTuapom-CjN_/view?usp=drive_link',
+  },
+  {
+    id: 'V12',
+    image: null,
+    title: { en: 'Hair Transformation 12', vi: 'Biến Hóa Tóc 12' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/1EaXbHvjg9DXQH8_jYy3whNswCL5gpAuS/view?usp=drive_link',
+  },
+  {
+    id: 'V13',
+    image: null,
+    title: { en: 'Hair Transformation 13', vi: 'Biến Hóa Tóc 13' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/1vWznGEHry7aSBzk6MYtDyOz2KLw74JVr/view?usp=drive_link',
+  },
+]
+
 function buildSocialSlots(): SocialLink[] {
   return [
     {
@@ -65,24 +160,15 @@ function buildSocialSlots(): SocialLink[] {
 
 const salonTourImages: Omit<TourStop, 'id'>[] = [
   {
-    image: '/images/salon-tour/Salon Tour.jpg',
-    label: { en: 'Welcome', vi: 'Chào mừng' },
-    caption: {
-      en: 'Step into Trang Tran New Concept — where every detail is intentional.',
-      vi: 'Bước vào Trang Tran New Concept — nơi mọi chi tiết đều có chủ đích.',
-    },
-    speed: 0.12,
-  },
-  {
     image: '/images/salon-tour/Salon Tour1.jpg',
-    label: { en: 'Reception', vi: 'Lễ tân' },
-    caption: { en: 'A warm welcome in a refined, minimal space.', vi: 'Đón tiếp ấm áp trong không gian tối giản, tinh tế.' },
+    label: { en: 'The Studio', vi: 'Studio' },
+    caption: { en: 'Editorial lighting meets precision craft.', vi: 'Ánh sáng editorial gặp tay nghề chuẩn xác.' },
     speed: 0.18,
   },
   {
     image: '/images/salon-tour/Salon Tour2.jpg',
-    label: { en: 'The Studio', vi: 'Studio' },
-    caption: { en: 'Editorial lighting meets precision craft.', vi: 'Ánh sáng editorial gặp tay nghề chuẩn xác.' },
+    label: { en: 'Waiting Area', vi: 'Không gian chờ' },
+    caption: { en: 'A warm welcome in a refined, minimal space.', vi: 'Đón tiếp ấm áp trong không gian tối giản, tinh tế.' },
     speed: 0.22,
   },
   {
@@ -99,38 +185,38 @@ const salonTourImages: Omit<TourStop, 'id'>[] = [
   },
   {
     image: '/images/salon-tour/Salon Tour5.jpg',
-    label: { en: 'The Salon', vi: 'Không gian salon' },
-    caption: { en: 'Five-star experience in every corner.', vi: 'Trải nghiệm năm sao trong từng góc không gian.' },
+    label: { en: 'Receptionist', vi: 'Lễ tân' },
+    caption: { en: 'Professional reception area.', vi: 'Khu vực lễ tân chuyên nghiệp.' },
     speed: 0.25,
   },
   {
     image: '/images/salon-tour/Salon Tour6.jpg',
-    label: { en: 'Work in Progress', vi: 'Đang tạo kiểu' },
-    caption: { en: 'Precision and care in every stroke.', vi: 'Sự chuẩn xác và tận tâm trong từng đường kéo.' },
+    label: { en: 'Work Area', vi: 'Khu vực làm việc' },
+    caption: { en: 'Dedicated styling stations.', vi: 'Trạm tạo kiểu chuyên dụng.' },
     speed: 0.14,
   },
   {
     image: '/images/salon-tour/Salon Tour7.jpg',
-    label: { en: 'The Team', vi: 'Đội ngũ' },
-    caption: { en: 'Skilled artisans who lead with heart.', vi: 'Nghệ nhân tận tâm, làm nghề bằng chữ Tâm.' },
+    label: { en: 'Mirror & Lighting', vi: 'Gương và ánh sáng' },
+    caption: { en: 'Perfect lighting for precision work.', vi: 'Ánh sáng hoàn hảo cho công việc chính xác.' },
     speed: 0.19,
   },
   {
     image: '/images/salon-tour/Salon Tour8.jpg',
-    label: { en: 'Behind the Chair', vi: 'Hậu trường' },
-    caption: { en: 'Dedicated to your personal transformation.', vi: 'Cống hiến cho sự thay đổi cá nhân của bạn.' },
+    label: { en: '', vi: '' },
+    caption: { en: '', vi: '' },
     speed: 0.16,
   },
   {
     image: '/images/salon-tour/Salon Tour9.jpg',
-    label: { en: 'Premium Products', vi: 'Sản phẩm cao cấp' },
-    caption: { en: 'Olaplex, Mydentity, Epres — trusted worldwide.', vi: 'Olaplex, Mydentity, Epres — tin dùng toàn cầu.' },
+    label: { en: '', vi: '' },
+    caption: { en: '', vi: '' },
     speed: 0.11,
   },
   {
     image: '/images/salon-tour/Salon Tour10.jpg',
-    label: { en: 'The Details', vi: 'Chi tiết' },
-    caption: { en: 'Minimal design. Maximum impact.', vi: 'Thiết kế tối giản. Ấn tượng tối đa.' },
+    label: { en: 'Salon Experience', vi: 'Trải nghiệm salon' },
+    caption: { en: 'Five-star experience in every corner.', vi: 'Trải nghiệm năm sao trong từng góc không gian.' },
     speed: 0.1,
   },
   {
@@ -189,6 +275,40 @@ export const content: SiteContent = {
       { value: '5★', label: { en: 'Standard', vi: 'Tiêu chuẩn' } },
       { value: '2023', label: { en: 'Shot Hair Show', vi: 'Show tóc quốc tế' } },
     ],
+    achievements: [
+      {
+        icon: '🌟',
+        title: { en: 'Moroccanoil Partner', vi: 'Đối Tác Moroccanoil' },
+        description: {
+          en: 'Official partner of Moroccanoil — bringing premium hair care products and techniques to Vietnam.',
+          vi: 'Đối tác chính thức của Moroccanoil — mang sản phẩm và kỹ thuật chăm sóc tóc cao cấp về Việt Nam.',
+        },
+      },
+      {
+        icon: '🎓',
+        title: { en: 'International Certifications', vi: 'Bằng Cấp Quốc Tế' },
+        description: {
+          en: 'Holds multiple prestigious domestic and international certifications in hair styling and coloring.',
+          vi: 'Sở hữu nhiều bằng cấp uy tín trong nước và quốc tế về tạo mẫu và nhuộm tóc.',
+        },
+      },
+      {
+        icon: '🎤',
+        title: { en: 'International Educator', vi: 'Giảng Viên Quốc Tế' },
+        description: {
+          en: 'Regularly invited to teach and demonstrate techniques at venues across Vietnam and internationally.',
+          vi: 'Thường xuyên được mời giảng dạy và biểu diễn kỹ thuật tại nhiều nơi trong nước và quốc tế.',
+        },
+      },
+      {
+        icon: '👩‍🏫',
+        title: { en: 'Professional Training', vi: 'Đào Tạo Chuyên Nghiệp' },
+        description: {
+          en: 'Provides comprehensive training programs for aspiring hair stylists, nurturing the next generation of talent.',
+          vi: 'Cung cấp chương trình đào tạo toàn diện cho các nhà tạo mẫu tương lai, nuôi dưỡng thế hệ tài năng mới.',
+        },
+      },
+    ],
     portrait: '/images/about/The Artist.jpg',
     secondaryImage: '/images/about/The Artist 1.jpg',
   },
@@ -215,7 +335,7 @@ export const content: SiteContent = {
       en: 'From runway-inspired color to soft, timeless cuts — each look tells a story. Reserved slots below are ready for your portfolio images.',
       vi: 'Từ màu nhuộm runway đến kiểu cắt tinh tế — mỗi tác phẩm kể một câu chuyện. Các slot trống bên dưới sẵn sàng cho ảnh portfolio của bạn.',
     },
-    items: buildLookbookSlots(),
+    items: [...videoItems, ...buildLookbookSlots().slice(videoItems.length)],
   },
   contact: {
     sectionLabel: { en: 'Book', vi: 'Đặt lịch' },
@@ -247,8 +367,8 @@ export const content: SiteContent = {
 export const contentStats = {
   lookbook: {
     max: SLOT_LIMITS.lookbook.max,
-    filled: content.lookbook.items.filter((i) => i.image).length,
-    reserved: content.lookbook.items.filter((i) => !i.image).length,
+    filled: content.lookbook.items.filter((i) => i.image || i.externalUrl).length,
+    reserved: content.lookbook.items.filter((i) => !i.image && !i.externalUrl).length,
   },
   social: {
     max: SLOT_LIMITS.social.max,

@@ -17,7 +17,7 @@ export function BookingForm() {
       </p>
       <button
         onClick={handleBookNow}
-        className="w-full border border-zinc-600 bg-transparent px-8 py-4 font-body text-xs uppercase tracking-[0.25em] text-zinc-200 transition-colors hover:border-accent hover:text-accent md:w-auto"
+        className="w-full border-2 border-yellow-600 bg-transparent px-8 py-4 font-body text-xs uppercase tracking-[0.25em] text-yellow-600 transition-colors hover:border-yellow-500 hover:text-yellow-500 md:w-auto"
       >
         {t(content.contact.cta)}
       </button>

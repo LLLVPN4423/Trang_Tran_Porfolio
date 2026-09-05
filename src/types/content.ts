@@ -40,11 +40,21 @@ export interface GalleryItem {
   image: string | null
   title: BilingualText
   category: BilingualText
+  /** External URL (video, external image, etc.) - opens on click */
+  externalUrl?: string
+  /** Thumbnail for external content */
+  thumbnail?: string
 }
 
 export interface StatItem {
   value: string
   label: BilingualText
+}
+
+export interface AchievementItem {
+  icon: string
+  title: BilingualText
+  description: BilingualText
 }
 
 export interface SiteContent {
@@ -66,6 +76,7 @@ export interface SiteContent {
     quote: BilingualText
     pillars: BilingualText[]
     stats: StatItem[]
+    achievements: AchievementItem[]
     portrait: string
     secondaryImage?: string | null
   }

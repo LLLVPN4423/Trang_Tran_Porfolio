@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { SectionWrapper } from '../layout/SectionWrapper'
 import { ScrollReveal } from '../ui/ScrollReveal'
 import { LookbookCard } from '../ui/LookbookCard'
+import { VideoModal } from '../ui/VideoModal'
 import { content, contentStats } from '../../data/content'
 import { useLanguage } from '../../context/LanguageContext'
 import { useScrollReady } from '../../context/LenisContext'
@@ -15,8 +16,17 @@ export function Lookbook() {
   const trackRef = useRef<HTMLDivElement>(null)
   const scrollReady = useScrollReady()
   const [reducedMotion, setReducedMotion] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false)
+  const [currentVideoUrl, setCurrentVideoUrl] = useState<string | null>(null)
 
   const visibleItems = content.lookbook.items.slice(0, SLOT_LIMITS.lookbook.reservedVisible)
+
+  const handleCardClick = (item: typeof content.lookbook.items[0]) => {
+    if (item.externalUrl) {
+      setCurrentVideoUrl(item.externalUrl)
+      setModalOpen(true)
+    }
+  }
 
   useEffect(() => {
     const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
@@ -93,7 +103,7 @@ export function Lookbook() {
         <div className="bg-base px-6 pb-24 md:px-12 lg:px-20">
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {visibleItems.map((item, index) => (
-              <LookbookCard key={item.id} item={item} index={index} variant="grid" />
+              <LookbookCard key={item.id} item={item} index={index} variant="grid" onClick={() => handleCardClick(item)} />
             ))}
           </div>
         </div>
@@ -108,7 +118,7 @@ export function Lookbook() {
               className="lookbook-track flex w-max items-center gap-4 px-4 sm:gap-5 sm:px-6 md:gap-6 md:px-10 lg:px-16"
             >
               {visibleItems.map((item, index) => (
-                <LookbookCard key={item.id} item={item} index={index} variant="horizontal" />
+                <LookbookCard key={item.id} item={item} index={index} variant="horizontal" onClick={() => handleCardClick(item)} />
               ))}
             </div>
           </div>
@@ -119,6 +129,14 @@ export function Lookbook() {
             </span>
           </p>
         </div>
+      )}
+      
+      {modalOpen && currentVideoUrl && (
+        <VideoModal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          videoUrl={currentVideoUrl}
+        />
       )}
     </div>
   )

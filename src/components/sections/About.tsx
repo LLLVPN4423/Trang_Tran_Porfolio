@@ -75,6 +75,32 @@ export function About() {
               ))}
             </div>
           </ScrollReveal>
+
+          <ScrollReveal delay={0.5}>
+            <div className="mt-12 space-y-6">
+              <h3 className="font-display text-2xl text-zinc-200 md:text-3xl">
+                {t({ en: 'Achievements & Recognition', vi: 'Thành Tựu & Vinh Danh' })}
+              </h3>
+              <div className="grid gap-4 md:grid-cols-2">
+                {content.about.achievements.map((achievement) => (
+                  <div
+                    key={achievement.title.en}
+                    className="rounded-lg border border-zinc-800 bg-zinc-900/50 p-5 transition-colors hover:border-zinc-700"
+                  >
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl">{achievement.icon}</span>
+                      <div>
+                        <h4 className="font-display text-lg text-zinc-200">{t(achievement.title)}</h4>
+                        <p className="mt-2 font-body text-sm leading-relaxed text-zinc-400">
+                          {t(achievement.description)}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
       </div>
     </SectionWrapper>
