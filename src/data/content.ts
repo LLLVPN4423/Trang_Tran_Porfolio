@@ -117,6 +117,41 @@ const videoItems: GalleryItem[] = [
     category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
     externalUrl: 'https://drive.google.com/file/d/1vWznGEHry7aSBzk6MYtDyOz2KLw74JVr/view?usp=drive_link',
   },
+  {
+    id: 'V14',
+    image: null,
+    title: { en: 'Salon Story · Vogamax 01', vi: 'Story Salon · Vogamax 01' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/14a0sbg5xTnSEMLGrDonKKVaf0zhktcRU/view?usp=sharing',
+  },
+  {
+    id: 'V15',
+    image: null,
+    title: { en: 'Salon Story · Vogamax 02', vi: 'Story Salon · Vogamax 02' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/1UAR96Dr8QO79lpiYgxoEs9swHLZW2S1v/view?usp=sharing',
+  },
+  {
+    id: 'V16',
+    image: null,
+    title: { en: 'Salon Story · Vogamax 03', vi: 'Story Salon · Vogamax 03' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/14qMPi280s23TK3BQf07qNv-LGycdSJRx/view?usp=sharing',
+  },
+  {
+    id: 'V17',
+    image: null,
+    title: { en: 'Hair Transformation 14', vi: 'Biến Hóa Tóc 14' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/1zhiOgfB7JGIcD6Bq1lVJgO4EnogGywwm/view?usp=sharing',
+  },
+  {
+    id: 'V18',
+    image: null,
+    title: { en: 'Hair Transformation 15', vi: 'Biến Hóa Tóc 15' },
+    category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
+    externalUrl: 'https://drive.google.com/file/d/1CZwlztOFTvYwaHDP6vNxddmpXs3Y2k9J/view?usp=sharing',
+  },
 ]
 
 function buildSocialSlots(): SocialLink[] {
@@ -332,8 +367,8 @@ export const content: SiteContent = {
     sectionLabel: { en: 'Signature Work', vi: 'Tác phẩm' },
     heading: { en: 'Editorial transformations', vi: 'Những biến hóa editorial' },
     description: {
-      en: 'From runway-inspired color to soft, timeless cuts — each look tells a story. Reserved slots below are ready for your portfolio images.',
-      vi: 'Từ màu nhuộm runway đến kiểu cắt tinh tế — mỗi tác phẩm kể một câu chuyện. Các slot trống bên dưới sẵn sàng cho ảnh portfolio của bạn.',
+      en: 'Transformation reels and salon stories — scroll the gallery, hover for a preview, tap to watch full screen.',
+      vi: 'Video biến hóa và story tại salon — cuộn gallery, rê chuột để xem preview, nhấn để phát toàn màn hình.',
     },
     items: [...videoItems, ...buildLookbookSlots().slice(videoItems.length)],
   },

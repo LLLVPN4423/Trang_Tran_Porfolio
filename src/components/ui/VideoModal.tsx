@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { X } from 'lucide-react'
+import { toGoogleDriveEmbedUrl } from '../../lib/googleDrive'
 
 interface VideoModalProps {
   isOpen: boolean
@@ -24,18 +25,7 @@ export function VideoModal({ isOpen, onClose, videoUrl }: VideoModalProps) {
 
   if (!isOpen) return null
 
-  // Convert Drive URL to embed URL
-  const getEmbedUrl = (url: string) => {
-    if (url.includes('drive.google.com/file/d/')) {
-      const match = url.match(/\/file\/d\/([^\/]+)/)
-      if (match) {
-        return `https://drive.google.com/file/d/${match[1]}/preview`
-      }
-    }
-    return url
-  }
-
-  const embedUrl = getEmbedUrl(videoUrl)
+  const embedUrl = toGoogleDriveEmbedUrl(videoUrl)
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm">

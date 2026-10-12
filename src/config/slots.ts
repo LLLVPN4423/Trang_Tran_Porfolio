@@ -5,9 +5,9 @@
 export const SLOT_LIMITS = {
   /** Hair portfolio gallery (Lookbook section) */
   lookbook: {
-    max: 12,
-    /** How many empty placeholder panels to show in the UI */
-    reservedVisible: 6,
+    max: 24,
+    /** Cards shown in the horizontal gallery (videos + reserved slots) */
+    reservedVisible: 24,
   },
   /** Social / channel links (Contact + Footer) */
   social: {
