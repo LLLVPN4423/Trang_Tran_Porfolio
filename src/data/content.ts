@@ -320,6 +320,14 @@ export const content: SiteContent = {
         },
       },
       {
+        icon: '🤝',
+        title: { en: 'Vogamax Partner', vi: 'Đối Tác Vogamax' },
+        description: {
+          en: 'Official Vogamax partner — trusted professional hair color and care for salon transformations.',
+          vi: 'Đối tác chính thức Vogamax — màu nhuộm và chăm sóc tóc chuyên nghiệp, đồng hành cùng các tác phẩm tại salon.',
+        },
+      },
+      {
         icon: '🎓',
         title: { en: 'International Certifications', vi: 'Bằng Cấp Quốc Tế' },
         description: {
