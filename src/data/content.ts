@@ -11,19 +11,6 @@ const reservedCaption = {
   vi: 'Thêm ảnh & mô tả trong src/data/content.ts',
 }
 
-function buildLookbookSlots(): GalleryItem[] {
-  const slots: GalleryItem[] = []
-  for (let i = 1; i <= SLOT_LIMITS.lookbook.max; i++) {
-    slots.push({
-      id: String(i).padStart(2, '0'),
-      image: null,
-      title: reservedLabel(i),
-      category: { en: 'Coming soon', vi: 'Sắp cập nhật' },
-    })
-  }
-  return slots
-}
-
 // Add video items from Drive
 const videoItems: GalleryItem[] = [
   {
@@ -87,7 +74,7 @@ const videoItems: GalleryItem[] = [
     image: null,
     title: { en: 'Hair Transformation 09', vi: 'Biến Hóa Tóc 09' },
     category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
-    externalUrl: 'https://drive.google.com/file/d/188DLrd-ICP3aga_iC7Lh9IuKA-_FHqzn/view?usp=drive_link',
+    externalUrl: 'https://drive.google.com/file/d/18LDLrd-ICP3aga_iC7Lh9IuKA-_FHqzn/view?usp=sharing',
   },
   {
     id: 'V10',
@@ -378,7 +365,7 @@ export const content: SiteContent = {
       en: 'Transformation reels and salon stories — scroll the gallery, hover for a preview, tap to watch full screen.',
       vi: 'Video biến hóa và story tại salon — cuộn gallery, rê chuột để xem preview, nhấn để phát toàn màn hình.',
     },
-    items: [...videoItems, ...buildLookbookSlots().slice(videoItems.length)],
+    items: [...videoItems],
   },
   contact: {
     sectionLabel: { en: 'Book', vi: 'Đặt lịch' },

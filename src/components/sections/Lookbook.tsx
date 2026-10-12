@@ -85,11 +85,13 @@ export function Lookbook() {
             <p className="mt-6 font-body text-base leading-relaxed text-zinc-400">
               {t(content.lookbook.description)}
             </p>
-            <p className="mt-4 font-body text-xs uppercase tracking-[0.2em] text-zinc-600">
-              {t({ en: 'Portfolio slots', vi: 'Slot portfolio' })}: {contentStats.lookbook.filled}/
-              {contentStats.lookbook.max} · {t({ en: 'Reserved', vi: 'Trống' })}:{' '}
-              {contentStats.lookbook.reserved}
-            </p>
+            {contentStats.lookbook.reserved > 0 && (
+              <p className="mt-4 font-body text-xs uppercase tracking-[0.2em] text-zinc-600">
+                {t({ en: 'Portfolio slots', vi: 'Slot portfolio' })}: {contentStats.lookbook.filled}/
+                {contentStats.lookbook.max} · {t({ en: 'Reserved', vi: 'Trống' })}:{' '}
+                {contentStats.lookbook.reserved}
+              </p>
+            )}
             {!reducedMotion && (
               <p className="mt-3 font-body text-xs uppercase tracking-[0.2em] text-zinc-600">
                 {t({ en: 'Scroll down to browse the gallery', vi: 'Cuộn xuống để xem gallery' })}

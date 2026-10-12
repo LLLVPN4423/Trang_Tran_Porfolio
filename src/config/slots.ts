@@ -5,9 +5,9 @@
 export const SLOT_LIMITS = {
   /** Hair portfolio gallery (Lookbook section) */
   lookbook: {
-    max: 24,
-    /** Cards shown in the horizontal gallery (videos + reserved slots) */
-    reservedVisible: 24,
+    max: 18,
+    /** Cards shown in the horizontal gallery (18 video clips) */
+    reservedVisible: 18,
   },
   /** Social / channel links (Contact + Footer) */
   social: {
