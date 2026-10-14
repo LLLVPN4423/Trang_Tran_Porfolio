@@ -39,7 +39,7 @@ const videoItems: GalleryItem[] = [
     image: null,
     title: { en: 'Hair Transformation 04', vi: 'Biến Hóa Tóc 04' },
     category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
-    externalUrl: 'https://drive.google.com/file/d/1z2TlfOfRKGtxaa_tw-UOwkyCYbfNJHA6/view?usp=sharing',
+    externalUrl: 'https://drive.google.com/file/d/1hOnr9wU3-50FIfjLluRQ08s6fIQ5j5TV/view?usp=sharing',
   },
   {
     id: 'V05',
@@ -53,7 +53,7 @@ const videoItems: GalleryItem[] = [
     image: null,
     title: { en: 'Hair Transformation 06', vi: 'Biến Hóa Tóc 06' },
     category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
-    externalUrl: 'https://drive.google.com/file/d/251qCFuAb-hyN5WxWgwluWfyYE-xV4Jib/view?usp=sharing',
+    externalUrl: 'https://drive.google.com/file/d/1OMsIfPIsKnepwvnHbMepsVpueqN4s2Hd/view?usp=sharing',
   },
   {
     id: 'V07',
@@ -74,7 +74,7 @@ const videoItems: GalleryItem[] = [
     image: null,
     title: { en: 'Hair Transformation 09', vi: 'Biến Hóa Tóc 09' },
     category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
-    externalUrl: 'https://drive.google.com/file/d/08LDLrd-ICP3aga_iC7Lh9IuKA-_FHqzn/view?usp=sharing',
+    externalUrl: 'https://drive.google.com/file/d/1mReyjPQqJFyKBVkur8cjU3T6Z0xPjDSJ/view?usp=sharing',
   },
   {
     id: 'V10',
