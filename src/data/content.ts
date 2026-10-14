@@ -39,7 +39,7 @@ const videoItems: GalleryItem[] = [
     image: null,
     title: { en: 'Hair Transformation 04', vi: 'Biến Hóa Tóc 04' },
     category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
-    externalUrl: 'https://drive.google.com/file/d/1z2TlrOfRKGtxaa_tw-UOwkyCYbfNJHA6/view?usp=drive_link',
+    externalUrl: 'https://drive.google.com/file/d/1z2TlfOfRKGtxaa_tw-UOwkyCYbfNJHA6/view?usp=sharing',
   },
   {
     id: 'V05',
@@ -53,7 +53,7 @@ const videoItems: GalleryItem[] = [
     image: null,
     title: { en: 'Hair Transformation 06', vi: 'Biến Hóa Tóc 06' },
     category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
-    externalUrl: 'https://drive.google.com/file/d/151qCFuAb-hyN5WxWgwluWfyYE-xV4Jib/view?usp=drive_link',
+    externalUrl: 'https://drive.google.com/file/d/251qCFuAb-hyN5WxWgwluWfyYE-xV4Jib/view?usp=sharing',
   },
   {
     id: 'V07',
@@ -74,7 +74,7 @@ const videoItems: GalleryItem[] = [
     image: null,
     title: { en: 'Hair Transformation 09', vi: 'Biến Hóa Tóc 09' },
     category: { en: 'Video Work', vi: 'Video Tác Phẩm' },
-    externalUrl: 'https://drive.google.com/file/d/18LDLrd-ICP3aga_iC7Lh9IuKA-_FHqzn/view?usp=sharing',
+    externalUrl: 'https://drive.google.com/file/d/08LDLrd-ICP3aga_iC7Lh9IuKA-_FHqzn/view?usp=sharing',
   },
   {
     id: 'V10',
@@ -308,10 +308,10 @@ export const content: SiteContent = {
       },
       {
         icon: '🤝',
-        title: { en: 'Vogamax Partner', vi: 'Đối Tác Vogamax' },
+        title: { en: 'Vogamax Ambassador', vi: 'Ambassador Vogamax' },
         description: {
-          en: 'Official Vogamax partner — trusted professional hair color and care for salon transformations.',
-          vi: 'Đối tác chính thức Vogamax — màu nhuộm và chăm sóc tóc chuyên nghiệp, đồng hành cùng các tác phẩm tại salon.',
+          en: 'Official Vogamax ambassador — representing professional hair color and care in salon work and education.',
+          vi: 'Ambassador chính thức của Vogamax — đại diện thương hiệu màu nhuộm và chăm sóc tóc chuyên nghiệp trong tác phẩm và đào tạo tại salon.',
         },
       },
       {
