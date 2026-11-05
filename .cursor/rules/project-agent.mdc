@@ -1,0 +1,14 @@
+---
+description: Đọc AGENTS.md trước; ghi AGENT_CHANGELOG.md sau mỗi task
+alwaysApply: true
+---
+
+# Trang Tran Hair — quy trình agent
+
+1. **Trước khi code:** Đọc [`AGENTS.md`](../../AGENTS.md) ở root repo. Xem vài dòng mới nhất của [`AGENT_CHANGELOG.md`](../../AGENT_CHANGELOG.md).
+2. **Phạm vi:** Chỉ mở file trong bảng "File map" của AGENTS.md + file user chỉ định. Không quét cả repo nếu không cần.
+3. **Sau khi xong:** Thêm một mục mới **đầu file** `AGENT_CHANGELOG.md` (ngày, việc làm, file, commit/deploy).
+4. **Chất lượng:** `npm run build` nếu sửa `src/`. Diff nhỏ, giữ EN/VI và dark theme hiện có.
+5. **Commit/push:** Chỉ khi user yêu cầu (trừ user rule khác).
+
+Nội dung dự án chi tiết nằm trong **AGENTS.md**, không lặp lại trong chat.

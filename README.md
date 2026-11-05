@@ -2,6 +2,8 @@
 
 Professional hair stylist portfolio for **Tiger Tran** / **Trang Tran Hair**, Sóc Trăng.
 
+**AI / Cursor agents:** read [`AGENTS.md`](./AGENTS.md) first; log changes in [`AGENT_CHANGELOG.md`](./AGENT_CHANGELOG.md).
+
 ## Features
 
 - Editorial parallax scrolling (GSAP + Lenis)
