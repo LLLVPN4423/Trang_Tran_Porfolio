@@ -17,7 +17,7 @@ Ghi **ngắn gọn** mỗi lần agent/user thay đổi có ý nghĩa. Mục m�
 ### 2026-11-05 — Thêm AGENTS.md + quy trình changelog
 - **Việc làm:** Tạo `AGENTS.md` (context dự án cho agent), `AGENT_CHANGELOG.md`, rule Cursor `.cursor/rules/project-agent.mdc` (đọc context trước, ghi log sau).
 - **File:** `AGENTS.md`, `AGENT_CHANGELOG.md`, `.cursor/rules/project-agent.mdc`
-- **Deploy/commit:** (sau khi push commit này)
+- **Deploy/commit:** `655e625` (pushed `main`)
 - **Ghi chú:** Mục tiêu giảm token — agent không cần đọc full repo cho task thường.
 
 ### 2026-10-13 — Sửa link Drive 04/06/09 từ folder salon
